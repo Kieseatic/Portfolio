@@ -49,8 +49,11 @@ const Home = () => {
               className="p text-white/80"
             >
               <p>
-                The kind of developer who shapes ideas into interactive web
-                experiences, while sipping coffee on a glorious day.
+                A versatile software developer who doesn’t just write code, 
+                but crafts intelligent, scalable solutions that bring ideas 
+                to life—on the web, on the server, or anywhere technology 
+                can make an impact. I’m driven by a passion for solving 
+                real-world problems through clean, creative code.
               </p>
             </motion.div>
             {/* take action */}
@@ -61,7 +64,8 @@ const Home = () => {
               viewport={{ once: false, amount: 0.2 }}
               className="h3 leading-normal"
             >
-              Let's build something extraordinary together!
+              Ready to innovate and transform ideas into impactful solutions? 
+
             </motion.h3>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center justify-center xl:items-center xl:justify-start gap-6 pt-2">
@@ -72,7 +76,7 @@ const Home = () => {
                 viewport={{ once: false, amount: 0.2 }}
                 href="/assets/Harsh-Dugar-Resume.pdf"
                 download
-                aria-label="Download Luiso's CV"
+                aria-label="Download Harsh's CV"
               >
                 <Button
                   variant="outline"

@@ -16,8 +16,8 @@ const Photo = () => {
         className="relative z-10 w-[250px] h-[250px] xl:w-[400px] xl:h-[400px]"
       >
         <Image
-          src="/assets/photo.jpg"
-          alt="Luiso's profile photo"
+          src="/assets/photo.png"
+          alt="Harsh's profile photo"
           priority
           quality={100}
           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
