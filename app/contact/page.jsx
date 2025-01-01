@@ -14,17 +14,17 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "(+1) 786 825 4670",
+    description: "(+1) 226 883 2296",
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "solarluiso@gmail.com",
+    description: "harshdugar1234@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Location",
-    description: "Washington, DC",
+    description: "Toronto, Ontario, Canada",
   },
 ];
 
@@ -62,7 +62,7 @@ const Contact = () => {
     }
 
     // Proceed with form submission
-    formData.append("access_key", "c83ad2be-7bc5-4273-9457-6524f5deda36");
+    formData.append("access_key", "dea10470-31d2-43d2-b001-8aeed2a96484");
     const json = JSON.stringify(Object.fromEntries(formData));
 
     const response = await fetch("https://api.web3forms.com/submit", {
