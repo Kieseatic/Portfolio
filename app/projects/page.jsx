@@ -28,46 +28,7 @@ const projects = [
     live: "https://mood-mapper.netlify.app/",
     github: "https://github.com/solarluiso/mood-tracker",
   },
-  {
-    num: "03",
-    category: "frontend",
-    title: "Focus",
-    description:
-      "A sleek web application designed to enhance productivity and focus.",
-    stack: [
-      { name: "Next.js" },
-      { name: "TailwindCSS" },
-      { name: "Framer-Motion" },
-    ],
-    image: "/assets/projects/thumb1.png",
-    live: "https://focus-inky.vercel.app/",
-    github: "https://github.com/solarluiso/focus",
-  },
-  {
-    num: "04",
-    category: "frontend",
-    title: "Fit Physique",
-    description: "A fitness-focused platform to track workouts and progress.",
-    stack: [
-      { name: "Next.js" },
-      { name: "TypeScript" },
-      { name: "TailwindCSS" },
-    ],
-    image: "/assets/projects/thumb2.png",
-    live: "https://fitphysique-pi.vercel.app/",
-    github: "https://github.com/solarluiso/fitphysique",
-  },
-  {
-    num: "05",
-    category: "frontend",
-    title: "Modern Bank App",
-    description:
-      "An innovative banking application with a modern user interface.",
-    stack: [{ name: "React.js" }, { name: "TailwindCSS" }, { name: "Vite" }],
-    image: "/assets/projects/thumb3.png",
-    live: "https://modern-bank-app-ebon-omega.vercel.app/",
-    github: "https://github.com/solarluiso/modern-bank-app",
-  },
+ 
 ];
 
 const Projects = () => {

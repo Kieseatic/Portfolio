@@ -45,7 +45,7 @@ const Contact = () => {
         title: "Error!",
         text: "All fields are required.",
         icon: "error",
-      });
+    }); // Close the event listener function
       return;
     }
 
@@ -61,18 +61,19 @@ const Contact = () => {
       return;
     }
 
-    // Proceed with form submission
-    formData.append("access_key", "dea10470-31d2-43d2-b001-8aeed2a96484");
-    const json = JSON.stringify(Object.fromEntries(formData));
+// Proceed with form submission
+formData.append("access_key", "dea10470-31d2-43d2-b001-8aeed2a96484");
+const json = JSON.stringify(Object.fromEntries(formData));
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    });
+const response = await fetch("https://api.web3forms.com/submit", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  },
+  body: json, // Move body outside of headers
+});
+
 
     const result = await response.json();
     if (result.success) {
