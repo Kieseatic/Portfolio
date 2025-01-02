@@ -10,25 +10,41 @@ const projects = [
   {
     num: "01",
     category: "fullstack",
-    title: "Product Store App",
-    description: "A dynamic full-stack product management application.",
-    stack: [{ name: "React.js" }, { name: "Node.js" }, { name: "MongoDB" }],
-    image: "/assets/projects/thumb4.png",
-    live: "https://product-store-app-tkmt.onrender.com/",
-    github: "https://github.com/solarluiso/product-store-app",
+    title: "Resume and Interview Analysis AI app",
+    description:
+      "A cutting-edge platform to streamline hiring processes by automating interview analysis and resume-job matching using AI-powered tools.",
+    stack: [
+      { name: "OpenAI" },
+      { name: "RAG" },
+      { name: "Flask" },
+      { name: "React.js" },
+    ],
+    image: "/assets/projects/Prj1.jpg",
+    live: "https://github.com/Kieseatic/Resume-and-Interview-analysis",
+    github: "https://github.com/Kieseatic/Resume-and-Interview-analysis",
   },
   {
     num: "02",
     category: "fullstack",
-    title: "Mood Mapper",
+    title: "Accessories Shopping Web Application",
     description:
-      "A web application to track and analyze your mood throughout the days.",
-    stack: [{ name: "Next.js" }, { name: "TailwindCSS" }, { name: "Firebase" }],
-    image: "/assets/projects/thumb5.png",
-    live: "https://mood-mapper.netlify.app/",
-    github: "https://github.com/solarluiso/mood-tracker",
+      "An E-commerce platform that sells various accessories, providing a seamless shopping experience for customers.",
+    stack: [{ name: "Next.js" }, { name: "TailwindCSS" }, { name: "React-js" }],
+    image: "/assets/projects/Prj2.jpg",
+    live: "https://github.com/Kieseatic/React-Shopping-Website",
+    github: "https://github.com/Kieseatic/React-Shopping-Website",
   },
- 
+  {
+    num: "03",
+    category: "Software Testing ",
+    title: "Delivery Management System",
+    description:
+      "The Delivery Management System is an advanced software solution designed to optimize the logistics of truck deliveries. ",
+    stack: [{ name: "C++" }, { name: "Python" }, { name: "Jenkins" }],
+    image: "/assets/projects/Prj3.jpg",
+    live: "https://github.com/Kieseatic/Delivery-Management-System",
+    github: "https://github.com/Kieseatic/Delivery-Management-System",
+  },
 ];
 
 const Projects = () => {
@@ -37,7 +53,7 @@ const Projects = () => {
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-6"
+      className="min-h-[50vh] flex items-center justify-center py-12 xl:py-6"
     >
       <div className="container mx-auto">
         <h3 className="h3 mb-8 text-accent text-center">My Projects</h3>
@@ -45,23 +61,22 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="relative group rounded-xl overflow-hidden shadow-lg"
+              className="relative group rounded-xl overflow-hidden shadow-lg bg-secondary transition-all duration-300 h-[250px] hover:h-[350px]"
             >
               {/* Image */}
-              <div className="relative w-full h-60">
+              <div className="w-full h-[250px] overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
                   quality={90}
                   sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
-                  className="object-cover rounded-xl"
-                  priority={project.num === "02"}
+                  className="object-cover"
                 />
               </div>
 
-              {/* Project Content */}
-              <div className="absolute bottom-0 left-0 right-0 p-4 bg-black/90 text-white rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {/* Expanded Content */}
+              <div className="absolute bottom-0 left-0 right-0 bg-black/90 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                 <h3 className="font-bold text-lg">{project.title}</h3>
                 <p className="text-sm mt-2 text-white/80">
                   {project.description}
@@ -84,8 +99,8 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div className="w-[40px] h-[40px] rounded-full bg-white/5 flex justify-center items-center group">
-                      <BsArrowUpRight className="text-white text-xl group-hover:text-accent" />
+                    <div className="w-[40px] h-[40px] rounded-full bg-white/10 flex justify-center items-center transition-transform duration-300 hover:scale-110">
+                      <BsArrowUpRight className="text-white text-xl" />
                     </div>
                   </Link>
                   <Link
@@ -93,8 +108,8 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div className="w-[40px] h-[40px] rounded-full bg-white/5 flex justify-center items-center group">
-                      <BsGithub className="text-white text-xl group-hover:text-accent" />
+                    <div className="w-[40px] h-[40px] rounded-full bg-white/10 flex justify-center items-center transition-transform duration-300 hover:scale-110">
+                      <BsGithub className="text-white text-xl" />
                     </div>
                   </Link>
                 </div>
